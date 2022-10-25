@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
 
 import Auth from '../utils/auth';
+// TODO Use the Apollo useMutation() Hook to execute the SAVE_Book mutation in the handleSaveBook() function instead of the saveBook() function imported from the API file
+//  Make sure you keep the logic for saving the book's ID to state in the try...catch block
+
 import { saveBook, searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 
